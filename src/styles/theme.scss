@@ -1,0 +1,3 @@
+@import 'theme-def';
+@include mat-core();
+@include angular-material-theme($magic-mirror-theme);

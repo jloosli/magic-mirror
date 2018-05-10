@@ -1,0 +1,27 @@
+@import '~normalize.css/normalize.css';
+@import 'theme';
+
+$foreground: #ffffff;
+$background: black;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  color: $foreground;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+h1,h2,h3 {
+  font-weight: 300;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+  &:hover {
+    color: darken($foreground, 15%);
+  }
+}
