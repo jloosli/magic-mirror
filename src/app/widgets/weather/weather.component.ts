@@ -15,7 +15,7 @@ export class WeatherComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.weatherSvc.getCurrentWeather('Ogden').subscribe((res) => {
+    this.weatherSvc.getCurrentWeather('Ogden').subscribe((res:any) => {
       console.log(res);
       this.currentTemp = res.main.temp;
       this.currentIcon = this.weatherSvc.getIcon(res.weather[0].icon);
