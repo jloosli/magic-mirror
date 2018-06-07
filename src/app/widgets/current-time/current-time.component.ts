@@ -18,9 +18,10 @@ export class CurrentTimeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    const timerSource = timer(1000, 1000).pipe(
-      takeWhile(() => this.active)
-    );
+    const timerSource = timer(1000, 1000)
+      .pipe(
+        takeWhile(() => this.active)
+      );
     timerSource.subscribe(() => {
       const timestamp = moment();
       this.currentTime = timestamp.format('h:mm:ss a');

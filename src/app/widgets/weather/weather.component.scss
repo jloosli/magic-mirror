@@ -1,0 +1,13 @@
+.main-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .temperature {
+    font-size: 5rem;
+  }
+  .weather-icon img {
+    height: 20rem;
+  }
+
+}
