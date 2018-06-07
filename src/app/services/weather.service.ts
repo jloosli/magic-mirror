@@ -18,7 +18,7 @@ export class WeatherService {
   getCurrentWeather(location: string = null) {
     const weatherUrl = this.openWeatherAPIBase + 'weather';
     const params = this.APIParams.set('q', location);
-    return this.http.get(weatherUrl, {params: params});
+    return this.http.get<any>(weatherUrl, {params: params});
   }
 
   getIcon(iconSymbol: string): string {
