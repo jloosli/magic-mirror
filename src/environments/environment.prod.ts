@@ -1,6 +1,6 @@
 import keys from "./common";
 
 export const environment = {
-  production: true
+  production: true,
   keys: keys
 };

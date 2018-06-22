@@ -5,7 +5,7 @@
 import keys from "./common";
 
 export const environment = {
-  production: false
+  production: false,
   keys: keys
 };
 

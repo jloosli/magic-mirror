@@ -28,7 +28,7 @@ export class WeatherComponent implements OnInit {
     timerSource.subscribe(() => {
       this.weatherSvc
         .getCurrentWeather('Ogden')
-        .subscribe(res => {
+        .subscribe((res: any) => {
           this.current_weather.temperature = Math.round(res.main.temp);
           this.current_weather.icon = res.weather[0].icon;
 
